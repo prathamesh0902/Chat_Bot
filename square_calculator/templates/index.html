@@ -8,9 +8,13 @@
 </head>
 <body>
     <div class="container">
+        <!-- Add your logo image here -->
+        <div>
+            <img src="{{ url_for('static', filename='leger_logo.png') }}" alt="Chatbot Logo" class="logo">
+        </div>
         <h1>Square Calculator</h1>
         <input type="text" id="numberInput" placeholder="Enter a number">
-        <button onclick="calculateSquare()">Calculate Square</button>
+        <button class="button" onclick="calculateSquare()">Calculate Square</button>
         <div class="response" id="response"></div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
